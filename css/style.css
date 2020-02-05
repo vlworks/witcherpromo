@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Mason Chronicles';
+  src: url('../fonts/MasonChronicles.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MasonChronicles';
+  src: url('../fonts/MasonChronicles.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: normal;
+  background: url('../img/background.jpg') no-repeat;
+  background-position: center right 20%;
+  background-color: #141218;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 90px;
+}
+.header-content {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-links {
+  margin-left: 68px;
+  margin-right: auto;
+}
+.header-link {
+  margin-right: 24px;
+  color: #FFFFFF;
+}
+.header-link:visited {
+  color: #FFFFFF;
+}
+.social-link {
+  margin-left: 21px;
+}
+
+/* MAIN */
+
+.main-content {
+  display: flex;
+}
+.content {
+  max-width: 458px;
+  margin-bottom: 80px;
+}
+.genre {
+  display: block;
+  margin-bottom: 16px;
+}
+.rating {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.rating-img {
+  margin-right: 4px;
+}
+.rating-text {
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.main-title {
+  font-family: 'MasonChronicles', serif;
+  font-size: 76px;
+  line-height: 89px;
+  margin-bottom: 10px;
+}
+.main-description {
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+.button {
+  display: inline-block;
+  background-color: #9D2929;
+  border-radius: 8px;
+  border: none;
+  padding: 22px 72px;
+  outline: none;
+}
+.button:hover {
+  background-color: rgb(150, 67, 67);
+}
+.button:visited {
+  color: #FFFFFF;
+}
+.play {
+  position: relative;
+  background-color: #9D2929;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  margin: auto;
+}
+.play:hover {
+  background-color: rgb(104, 1, 1);
+}
+.play::before {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  content: '';
+  width: 132px;
+  height: 132px;
+  border-radius: 50%; 
+  background-color: #9D2929;
+  opacity: 0.5;
+}
+.play-img {
+  transform: translateX(4px);
+}
+
+/* SWIPER-SLIDER */
+
+.swiper-container {
+  max-width: 375px;
+  margin-left: 0px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 151px;
+  height: 100px;
+  padding: 13px 13px;
+  border-radius: 8px;
+}
+
+.slide-subtitle {
+  display: block;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 2px;
+}
+
+/* Slide 1 - ... */
+
+.slider-wrapper {
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+}
+.slide1 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/slider/slide1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.slide2 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/slider/slide2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.slide1 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/slider/slide1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.slide2 {
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/slider/slide2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.arrow {
+  background-color: transparent;
+  border: none;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 10px 0px;
+  margin-top: auto;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright {
+  color: #727174;
+}
+.footer-link {
+  color: #727174;
+}
+.footer-link:visited {
+  color: #727174;
+}
